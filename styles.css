@@ -7,11 +7,9 @@ body {
     line-height: 1.6;
     background: #f4f4f4;
 }
-
-/* Header */
 header {
-    background: black;
-    color: white;
+    background: black; 
+    color: white; 
     padding: 20px;
 }
 .header-content {
@@ -39,6 +37,7 @@ header {
     border-radius: 10px;
     border: 2px solid white;
 }
+
 
 /* Section */
 section {
