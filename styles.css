@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,8 @@ body {
     line-height: 1.6;
     background: #f4f4f4;
 }
+
+/* Header */
 header {
     background: black;
     color: white;
@@ -18,20 +21,26 @@ header {
 }
 .header-text {
     flex: 1;
+    text-align: left;
 }
 .header-text h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin: 0;
 }
 .header-text h2 {
     font-size: 1.5rem;
     font-style: italic;
+    margin: 10px 0;
 }
 .profile-pic {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    border: 2px solid white;
 }
+
+/* Section */
 section {
     background: white;
     margin: 20px auto;
@@ -44,6 +53,8 @@ section h2 {
     text-align: center;
     color: #007acc;
 }
+
+/* Skills */
 #skills ul {
     list-style-type: none;
     padding: 0;
@@ -55,6 +66,8 @@ section h2 {
 #skills li strong {
     font-weight: bold;
 }
+
+/* Projects */
 .project-row {
     display: flex;
     align-items: center;
@@ -64,13 +77,30 @@ section h2 {
     max-width: 300px;
     border-radius: 10px;
     margin: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .project-row.reverse {
     flex-direction: row-reverse;
 }
 .project-details {
     flex: 1;
+    padding: 10px;
 }
+.project-details h3 {
+    color: #007acc;
+    margin-top: 0;
+}
+.project-details ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.project-details ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
