@@ -32,3 +32,20 @@ img {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+#gallery div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+#gallery img {
+    width: 30%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
