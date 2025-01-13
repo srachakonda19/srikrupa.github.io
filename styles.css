@@ -20,8 +20,8 @@ header {
     align-items: center;
 }
 .profile-pic-large {
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Reduced size */
+    height: 150px; /* Proportional size */
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid white;
