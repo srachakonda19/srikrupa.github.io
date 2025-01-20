@@ -3,160 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srikrupa Rachakonda - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    <title>Portfolio - Srikrupa Rachakonda</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="colorlib-page">
-        <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-            <div class="text-center">
-                <div class="author-img" style="background-image: url(images/profile1.jpg);"></div>
-                <h1 id="colorlib-logo"><a href="index.html">Srikrupa Rachakonda</a></h1>
-                <span class="position">Full Stack Developer</span>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container">
+            <img src="profile1.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Hi, I'm <span>Srikrupa Rachakonda</span></h1>
+            <p>Full-Stack Developer | Salesforce Admin | Cloud Enthusiast</p>
+            <div class="cta-buttons">
+                <a href="Resume.pdf" class="btn">Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Accomplished Full Stack Developer with over 7 years of experience in delivering secure, scalable, and high-performance software solutions. Proficient in Java, Spring Boot, Angular, AWS, and SQL, with expertise in building microservices architectures, designing RESTful APIs, and creating responsive user interfaces. Passionate about leveraging advanced tools and technologies to create impactful solutions aligned with business goals.
+                </p>
+                <h3>Technologies:</h3>
                 <ul>
-                    <li><a href="mailto:rsrikrupa19@gmail.com">Email: rsrikrupa19@gmail.com</a></li>
-                    <li>Phone: +1 (314) 530-8933</li>
-                    <li><a href="https://www.linkedin.com/in/srikrupa-rachakonda-22127b346/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/srachakonda19" target="_blank">GitHub</a></li>
+                    <li>Frontend: HTML, CSS, JavaScript, Angular</li>
+                    <li>Backend: Java (Spring Boot), Python</li>
+                    <li>Database: MySQL</li>
+                    <li>Cloud: AWS, Salesforce</li>
                 </ul>
             </div>
-            <nav id="colorlib-main-menu" role="navigation" class="navbar">
-                <div id="navbar" class="collapse">
-                    <ul>
-                        <li class="active"><a href="#" data-nav-section="about">About</a></li>
-                        <li><a href="#" data-nav-section="skills">Skills</a></li>
-                        <li><a href="#" data-nav-section="projects">Projects</a></li>
-                        <li><a href="#" data-nav-section="education">Education</a></li>
-                        <li><a href="#" data-nav-section="contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </aside>
-
-        <div id="colorlib-main">
-            <section id="colorlib-hero" class="js-fullheight" data-section="about">
-                <div class="flexslider js-fullheight">
-                    <ul class="slides">
-                        <li style="background-image: url(images/bg_1.jpg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                                        <div class="slider-text-inner js-fullheight">
-                                            <div class="desc">
-                                                <h1>Hi! <br>I'm Srikrupa</h1>
-                                                <h2>Passionate Full Stack Developer</h2>
-                                                <p><a class="btn btn-primary btn-learn" href="#" data-nav-section="contact">Contact Me <i class="icon-download4"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="colorlib-about" data-section="about">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                <div class="col-md-12">
-                                    <div class="about-desc">
-                                        <h2 class="colorlib-heading">Who Am I?</h2>
-                                        <p>Accomplished Full Stack Developer with over 7 years of experience delivering secure, scalable, and high-performance software solutions. Proficient in Java, Spring Boot, Angular, AWS, and SQL, with expertise in building microservices architectures and creating responsive user interfaces.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="colorlib-services" data-section="skills">
-                <div class="colorlib-narrow-content">
-                    <h2 class="colorlib-heading">Technical Skills</h2>
-                    <div class="row">
-                        <div class="col-md-4 animate-box">
-                            <div class="services color-1">
-                                <h3>Programming</h3>
-                                <p>Java, Python, JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 animate-box">
-                            <div class="services color-2">
-                                <h3>Frameworks</h3>
-                                <p>Spring Boot, Angular</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 animate-box">
-                            <div class="services color-3">
-                                <h3>Cloud Platforms</h3>
-                                <p>AWS (EC2, S3, RDS, Lambda)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="colorlib-projects" data-section="projects">
-                <div class="colorlib-narrow-content">
-                    <h2 class="colorlib-heading">Projects</h2>
-                    <div class="row">
-                        <div class="col-md-6 animate-box">
-                            <div class="project" style="background-image: url(images/project1.jpg);">
-                                <div class="desc">
-                                    <h3><a href="#">Swift</a></h3>
-                                    <p>Scalable backend services for cross-border payments using Spring Boot and AWS tools.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 animate-box">
-                            <div class="project" style="background-image: url(images/project2.jpg);">
-                                <div class="desc">
-                                    <h3><a href="#">Sodexo</a></h3>
-                                    <p>Legacy migration to AWS with microservices development using Spring Boot and Angular.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="colorlib-education" data-section="education">
-                <div class="colorlib-narrow-content">
-                    <h2 class="colorlib-heading">Education</h2>
-                    <p>Master’s in Computer Science, Saint Louis University, St. Louis, MO</p>
-                    <p>Bachelor of Technology in Computer Science Engineering, Jawaharlal Nehru Technological University, Hyderabad, India</p>
-                </div>
-            </section>
-
-            <section class="colorlib-contact" data-section="contact">
-                <div class="colorlib-narrow-content">
-                    <h2 class="colorlib-heading">Contact</h2>
-                    <div class="row">
-                        <div class="col-md-6 animate-box">
-                            <p>Email: <a href="mailto:rsrikrupa19@gmail.com">rsrikrupa19@gmail.com</a></p>
-                            <p>Phone: +1 (314) 530-8933</p>
-                            <p><a href="https://www.linkedin.com/in/srikrupa-rachakonda-22127b346/" target="_blank">LinkedIn</a></p>
-                            <p><a href="https://github.com/srachakonda19" target="_blank">GitHub</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
-    </div>
+    </section>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master’s in Computer Science</h3>
+                <p><strong>University:</strong> Saint Louis University</p>
+                <p><strong>GPA:</strong> 4.0</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+                <p><strong>University:</strong> G. Narayanamma Institute of Technology and Science</p>
+                <p><strong>CGPA:</strong> 8.8</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Full Stack Developer</h3>
+                <p><strong>Company:</strong> Swift</p>
+                <p><strong>Duration:</strong> Dec 2023 - Present</p>
+                <p><strong>Project Description:</strong>
+                    Developing scalable solutions for Cross-Border Payments Enhancement using Angular, Spring Boot, and AWS. Focused on reducing transaction times and enhancing user experience with secure and transparent systems.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Full Stack Developer</h3>
+                <p><strong>Company:</strong> Sodexo</p>
+                <p><strong>Duration:</strong> Dec 2021 - Nov 2023</p>
+                <p><strong>Project Description:</strong>
+                    Migrated legacy applications to AWS cloud, developed microservices using Spring Boot, and designed secure user authentication mechanisms. Automated CI/CD pipelines to enhance deployment efficiency.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Full Stack Developer</h3>
+                <p><strong>Company:</strong> Ulta Beauty</p>
+                <p><strong>Duration:</strong> Jan 2020 - Nov 2021</p>
+                <p><strong>Project Description:</strong>
+                    Enhanced the Loyalty and Rewards Program with secure authentication, interactive dashboards, and scalable backend services using Spring Boot and Angular.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Junior Full Stack Developer</h3>
+                <p><strong>Company:</strong> Coupon Dunia</p>
+                <p><strong>Duration:</strong> July 2017 - Dec 2019</p>
+                <p><strong>Project Description:</strong>
+                    Contributed to Shopping Assistant development with personalized coupon recommendations and cashback offers. Developed APIs using Spring Boot and designed responsive UIs with Angular.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>GitHub Repository</h3>
+                <a href="https://github.com/srachakonda19" class="btn">Visit My GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">Java</div>
+                <div class="skill">Spring Boot</div>
+                <div class="skill">Angular</div>
+                <div class="skill">HTML/CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">AWS</div>
+                <div class="skill">Salesforce</div>
+                <div class="skill">Python</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">REST APIs</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Srikrupa Rachakonda. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/srikrupa-rachakonda-22127b346/">LinkedIn</a>
+                <a href="https://github.com/srachakonda19">GitHub</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
