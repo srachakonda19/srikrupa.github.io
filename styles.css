@@ -1,167 +1,224 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
     background: #f4f4f4;
+    line-height: 1.6;
 }
 
-/* Header */
-header {
-    background: #000;
-    color: #fff;
+/* Sidebar */
+#colorlib-aside {
+    background: #2c3e50;
+    color: #ecf0f1;
     padding: 30px 20px;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
 }
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.profile-pic-large {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
+
+.author-img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    border: 4px solid #007acc;
-}
-.header-text {
-    flex: 1;
-    margin-left: 20px;
-}
-.header-text h1 {
-    font-size: 2.8rem;
-    margin: 0;
-    color: #007acc;
-}
-.header-text h2 {
-    font-size: 1.6rem;
-    font-style: italic;
-    margin: 10px 0;
-    color: #ccc;
-}
-.header-details {
-    text-align: right;
-    margin-top: 10px;
-}
-.header-details a {
-    color: #007acc;
-    text-decoration: none;
-}
-.header-details a:hover {
-    text-decoration: underline;
+    margin: 0 auto 20px;
 }
 
-/* Sections */
-section {
-    background: #fff;
-    margin: 20px auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    max-width: 900px;
-}
-section h2 {
-    text-align: center;
-    color: #007acc;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+#colorlib-logo {
+    font-size: 2rem;
+    color: #1abc9c;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Skills */
-#skills ul {
-    list-style-type: none;
+#colorlib-main-menu ul {
+    list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#skills li {
-    margin: 10px;
-    font-size: 1.2rem;
-    flex: 1 1 45%;
-}
-#skills li strong {
-    color: #007acc;
 }
 
-/* Projects */
-.project-row {
+#colorlib-main-menu ul li {
+    margin: 15px 0;
+}
+
+#colorlib-main-menu ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#colorlib-main-menu ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Main Content */
+#colorlib-main {
+    margin-left: 25%;
+    padding: 20px;
+}
+
+/* Hero Section */
+#colorlib-hero {
+    position: relative;
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+.flexslider .slides li {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
-    background: #f9f9f9;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flexslider .desc {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background: #1abc9c;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #16a085;
+}
+
+/* About Section */
+.colorlib-about {
+    padding: 50px 0;
+}
+
+.colorlib-about .about-desc {
+    text-align: center;
+}
+
+.colorlib-about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.colorlib-services {
+    background: #ecf0f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.colorlib-services .services {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.project-row img {
-    max-width: 300px;
-    border-radius: 10px;
-    margin: 0 20px;
-}
-.project-row.reverse {
-    flex-direction: row-reverse;
-}
-.project-details {
-    flex: 1;
-    padding: 10px;
-}
-.project-details h3 {
-    color: #007acc;
+
+.colorlib-services .services h3 {
+    color: #1abc9c;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
-.project-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 10px 0;
+
+/* Projects Section */
+.colorlib-projects {
+    padding: 50px 0;
 }
-.project-details ul li {
-    margin: 5px 0;
+
+.project {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project .desc {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project .desc h3 {
+    margin: 0;
+    color: #1abc9c;
+}
+
+.project .desc p {
+    margin: 5px 0 0;
+    color: #ecf0f1;
+}
+
+/* Education Section */
+.colorlib-education {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.colorlib-education h2 {
+    margin-bottom: 20px;
+    color: #1abc9c;
+}
+
+/* Contact Section */
+.colorlib-contact {
+    padding: 50px 0;
+    background: #ecf0f1;
+}
+
+.colorlib-contact h2 {
+    color: #1abc9c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.colorlib-contact a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.colorlib-contact a:hover {
+    color: #16a085;
 }
 
 /* Footer */
 footer {
+    background: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
-    padding: 15px;
-    background: #000;
-    color: #fff;
+    padding: 20px;
     margin-top: 20px;
-    border-top: 4px solid #007acc;
 }
+
 footer a {
-    color: #007acc;
+    color: #1abc9c;
     text-decoration: none;
-    font-weight: bold;
 }
+
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Hobbies Section */
-#hobbies p {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .profile-pic-large {
-        margin-bottom: 15px;
-    }
-    .project-row {
-        flex-direction: column;
-    }
-    .project-row img {
-        max-width: 100%;
-        margin: 10px 0;
-    }
 }
