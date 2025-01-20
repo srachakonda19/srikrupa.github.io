@@ -86,14 +86,15 @@ nav ul li a:hover {
     background: #2980b9;
 }
 
-/* Profile Picture */
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    object-fit: cover; 
     margin-bottom: 20px;
+    border: 3px solid #ffffff; 
 }
+
 
 /* Section Styles */
 section {
