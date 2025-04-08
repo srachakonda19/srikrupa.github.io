@@ -8,26 +8,23 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #222;
+  background: #0f172a;
+  color: #f1f5f9;
 }
 
-/* Hero Section */
 header.hero {
-  background: linear-gradient(to right, #004e92, #000428);
-  color: white;
+  background: linear-gradient(to right, #0f766e, #134e4a);
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem 3rem;
 }
 
-/* Navbar */
 .navbar {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #0f172a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   z-index: 1000;
 }
@@ -41,47 +38,63 @@ header.hero {
 
 .navbar a {
   text-decoration: none;
-  color: #004e92;
+  color: #5eead4;
   font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
 }
 
 .hero-content {
-  padding-top: 6rem;
+  padding-top: 4rem;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #5eead4;
+  margin-bottom: 1rem;
 }
 
 .hero h1 span {
-  color: #00c6ff;
+  color: #5eead4;
 }
 
 .btn {
   display: inline-block;
-  background-color: #00c6ff;
+  background-color: #0f766e;
   color: #fff;
   padding: 0.8rem 1.6rem;
   border-radius: 5px;
   margin-top: 1rem;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-/* Section Styling */
+.btn:hover {
+  background-color: #134e4a;
+}
+
 .section {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
-/* Experience and Project Cards */
-.experience-item,
-.project {
-  background-color: white;
+.experience-item, .project {
+  background-color: #1e293b;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
-  border-left: 4px solid #004e92;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-left: 4px solid #5eead4;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Skills Grid */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -91,18 +104,28 @@ header.hero {
 }
 
 .skills-grid li {
-  background: #fff;
+  background: #1e293b;
   padding: 1rem;
   text-align: center;
   font-weight: 500;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  color: #5eead4;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
 footer {
-  background-color: #000428;
-  color: white;
+  background-color: #0f172a;
+  color: #94a3b8;
   text-align: center;
   padding: 1.5rem 0;
   margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #5eead4;
+}
+
+a:hover {
+  text-decoration: underline;
 }
